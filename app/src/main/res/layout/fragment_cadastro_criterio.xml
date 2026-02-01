@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNomeCriterio"
+        android:hint="Nome do Critério" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDescricaoCriterio"
+        android:hint="Descrição" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPesoCriterio"
+        android:hint="Peso Máximo (0.0 a 2.0)"
+        android:inputType="numberDecimal" />
+
+    <Button android:id="@+id/btnSalvarCriterio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar criterio" />
+
+</LinearLayout>
