@@ -36,5 +36,42 @@
             android:text="Peso Máximo: 2.0"
             android:layout_marginTop="8dp"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione a Nota:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <RadioButton
+                android:id="@+id/rbNota0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0,0" />
+
+            <RadioButton
+                android:id="@+id/rbNota1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1,0" />
+
+            <RadioButton
+                android:id="@+id/rbNota2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2,0" />
+        </RadioGroup>
+
+
     </LinearLayout>
 </androidx.cardview.widget.CardView>
