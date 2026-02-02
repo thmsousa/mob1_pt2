@@ -27,6 +27,9 @@ public class Criterio implements Serializable {
     @ColumnInfo(name = "peso_maximo")
     public double pesoMaximo;
 
+    @Ignore
+    public double notaAtribuida = 0.0;
+
     public Criterio() {
     }
 

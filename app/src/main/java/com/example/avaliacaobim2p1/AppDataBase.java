@@ -6,9 +6,10 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.example.avaliacaobim2p1.Model.Criterio;
+import com.example.avaliacaobim2p1.Model.Relatorio;
 import com.example.avaliacaobim2p1.Model.Usuario;
 
-@Database(entities = {Usuario.class, Criterio.class}, version = 1)
+@Database(entities = {Usuario.class, Criterio.class, Relatorio.class}, version = 1)
 public abstract class AppDataBase extends RoomDatabase {
 
     public abstract AppDao appDao();

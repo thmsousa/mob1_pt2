@@ -7,6 +7,7 @@ import java.util.List;
 
 import com.example.avaliacaobim2p1.Model.Criterio;
 import com.example.avaliacaobim2p1.Model.Usuario;
+import com.example.avaliacaobim2p1.Model.Relatorio;
 
 @Dao
 public interface AppDao {
@@ -21,4 +22,11 @@ public interface AppDao {
 
     @Query("SELECT * FROM Criterio")
     List<Criterio> listarTodosCriterios();
+
+    @Insert
+    void inserirRelatorio(Relatorio relatorio);
+
+    @Query("SELECT * FROM relatorio ORDER BY relatorio_id DESC")
+    List<Relatorio> listarTodosRelatorios();
+
 }
